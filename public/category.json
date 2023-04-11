@@ -1,23 +1,27 @@
 [
       {
+        "id": 1,
         "logo": "../public/assets/Icons/accounts 1.png",
         "name": "Account & Finance",
-        "jobs_available": 300
+        "jobs": 300
       },
       {
+        "id": 2,
         "logo": "../public/assets/Icons/Frame-2.png",
         "name": "Creative Design",
-        "jobs_available": 200 
+        "jobs": 200 
       },
       {
+        "id": 3,
         "logo": "../public/assets/Icons/business 1.png",
         "name": "Marketing & Sales",
-        "jobs_available": 224
+        "jobs": 224
       },
       {
+        "id": 4,
         "logo": "../public/assets/Icons/Frame-4.png",
         "name": "Engineering Job",
-        "jobs_available": 320
+        "jobs": 320
       }
     ]
   
