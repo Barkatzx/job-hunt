@@ -6,6 +6,7 @@ import { faLocationDot, faDollarSign } from '@fortawesome/free-solid-svg-icons';
 const Feature = () => {
   const [feature, setFeature] = useState([]);
   const [showAll, setShowAll] = useState(false);
+  const [selectedJobId, setSelectedJobId] = useState(null);
 
   useEffect(() => {
     fetch('/public/data.json')
@@ -52,11 +53,15 @@ const Feature = () => {
                 </h2>
               </div>
             </div>
-            <Link to={`/jobs/${job.id}`}>
-            <button className='mt-3 hover:bg-purple-300 text-white text-2xl font-bold p-3 rounded bg-gradient-to-r from-fuchsia-600 to-purple-600'>
-              View Details
-            </button>
-            </Link>
+            <Link to={`/jobs?id=${job.id}`}>
+  <button
+    className='mt-3 hover:bg-purple-300 text-white text-2xl font-bold p-3 rounded bg-gradient-to-r from-fuchsia-600 to-purple-600'
+    onClick={() => setSelectedJobId(job.id)}
+  >
+    View Details
+  </button>
+</Link>
+
           </div>
         ))}
       </div>
