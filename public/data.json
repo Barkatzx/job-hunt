@@ -1,0 +1,107 @@
+[
+        {
+            "id": 1,
+            "company_logo": "../public/assets/img/google-1-1 1.png",
+            "job_title": "Software Engineer",
+            "company_name": "Google Inc.",
+            "remote_or_onsite": "Remote",
+            "location": "Anywhere",
+            "fulltime_or_parttime": "Full-time",
+            "salary": "$100,000 - $120,000",
+            "job_description": "A software engineer is responsible for designing and developing software applications using programming languages and tools. They work with cross-functional teams to analyze user needs and create software solutions that meet those requirements. The role involves writing clean, maintainable, and scalable code, testing and debugging software, and collaborating with other team members to ensure the success of the project. Additionally, a software engineer is expected to stay up to date with emerging trends and technologies in the field to improve their skills and stay competitive in the job market.",
+            "job_responsibility": "As a software engineer, your job responsibilities may include: Designing and developing software applications using programming languages and tools. Collaborating with cross-functional teams to analyze user needs and create software solutions that meet those requirements. Writing clean, maintainable, and scalable code. Testing and debugging software to ensure it meets quality standards and functional requirements.",
+            "educational_requirements": "Bachelor's or Master's degree in Computer Science or related field",
+            "experiences": "3+ years of experience in software development",
+            "contact_information": {
+                "phone": "+1 (123) 456-7890",
+                "email": "jobs@example.com"
+        }
+    },
+        {
+            "id": 2,
+            "company_logo": "../public/assets/img/amazon.png",
+            "job_title": "Marketing Manager",
+            "company_name": "Amazon Co.",
+            "remote_or_onsite": "Onsite",
+            "location": "New York, NY",
+            "fulltime_or_parttime": "Full-time",
+            "salary": "$80,000 - $100,000",
+            "job_description": "A marketing manager is responsible for planning and executing marketing campaigns to promote a company's products or services. They work closely with cross-functional teams, including sales, product development, and creative teams, to develop marketing strategies that meet business goals. The role involves conducting market research to identify target audiences, analyzing customer data, and monitoring market trends to stay up-to-date with changing consumer behavior.",
+            "job_responsibility": "The job responsibilities of a marketing manager may vary depending on the company and industry, but some common responsibilities include: Developing and executing marketing campaigns to promote the company's products or services. Conducting market research to identify target audiences, customer needs, and market trends. Collaborating with cross-functional teams, including sales, product development, and creative teams",
+            "educational_requirements": "Bachelor's degree in Marketing or related field",
+            "experiences": "5+ years of experience in marketing",
+            "contact_information": {
+                "phone": "+1 (123) 456-7890",
+                "email": "jobs@marketingco.com"
+        }
+    },
+        {
+            "id": 3,
+            "company_logo": "../public/assets/img/netflix-4 1.png",
+            "job_title": "Data Analyst",
+            "company_name": "Netflix Corp.",
+            "remote_or_onsite": "Onsite",
+            "location": "San Francisco, CA",
+            "fulltime_or_parttime": "Full-time",
+            "salary": "$90,000 - $110,000",
+            "job_description": "Netflix Corp. is seeking a data analyst to analyze and interpret data to help the company make informed business decisions. The ideal candidate will have experience with data analysis and visualization tools, such as SQL and Tableau, and be able to communicate complex data findings to non-technical stakeholders. Key responsibilities include collecting and analyzing large datasets, identifying trends and patterns, and presenting data insights in clear",
+            "job_responsibility": "Design and maintain databases to ensure the efficient storage and retrieval of data. The data analyst will be responsible for creating and optimizing database structures, as well as developing and implementing data security protocols to protect sensitive information. Additionally, the data analyst will work with cross-functional teams to understand business requirements and ensure that data is accurate and up-to-date.",
+            "educational_requirements": "Bachelor's degree in Statistics or related field",
+            "experiences": "2+ years of experience in data analysis",
+            "contact_information": {
+                "phone": "+1 (123) 456-7890",
+                "email": "jobs@datacorp.com"
+            }
+        },
+        {
+            "id": 4,
+            "company_logo": "../public/assets/img/tesla-9 1.png",
+            "job_title": "Product Manager",
+            "company_name": "Tesla Co.",
+            "remote_or_onsite": "Remote",
+            "location": "Anywhere",
+            "fulltime_or_parttime": "Full-time",
+            "salary": "$120,000 - $140,000",
+            "job_description": "Tesla Co. is seeking a product manager to manage our product portfolio and drive the development of innovative new products. The ideal candidate will have a strong background in product management and experience leading cross-functional teams to bring products to market. Key responsibilities include identifying new product opportunities, conducting market research, and defining product requirements. The product manager will work closely with design and engineering teams to develop product roadless, manage project timelines",
+            "job_responsibility": "The job responsibilities of a product manager at Tesla Co. may include: Defining and prioritizing product requirements based on market research and customer needs. Leading cross-functional teams to develop and launch new products, ensuring that project timelines and budgets are met. Conducting competitive analysis and staying up-to-date on industry trends to inform product development strategies. Collaborating with design and engineering teams to create product roadway's and ensure that products meet design and quality standards.",
+            "educational_requirements": "Bachelor's degree in Business Administration or related field",
+            "experiences": "5+ years of experience in product management",
+            "contact_information": {
+                "phone": "+1 (123) 456-7890",
+                "email": "jobs@product.com" }
+            },
+        {
+            "id": 5,
+            "company_logo": "../public/assets/img/Disney.png",
+            "job_title": "Product Manager",
+            "company_name": "Disney Co.",
+            "remote_or_onsite": "Remote",
+            "location": "Anywhere",
+            "fulltime_or_parttime": "Full-time",
+            "salary": "$120,000 - $140,000",
+            "job_description": "Disney Co. is seeking a product manager to manage our product portfolio and drive the development of innovative new products. The ideal candidate will have a strong background in product management and experience leading cross-functional teams to bring products to market. Key responsibilities include identifying new product opportunities, conducting market research, and defining product requirements. The product manager will work closely with design and engineering teams to develop product roadless, manage project timelines",
+            "job_responsibility": "The job responsibilities of a product manager at Tesla Co. may include: Defining and prioritizing product requirements based on market research and customer needs. Leading cross-functional teams to develop and launch new products, ensuring that project timelines and budgets are met. Conducting competitive analysis and staying up-to-date on industry trends to inform product development strategies. Collaborating with design and engineering teams to create product roadway's and ensure that products meet design and quality standards.",
+            "educational_requirements": "Bachelor's degree in Business Administration or related field",
+            "experiences": "5+ years of experience in product management",
+            "contact_information": {
+                "phone": "+1 (123) 456-7890",
+                "email": "jobs@product.com" }
+            },
+        {
+            "id": 6,
+            "company_logo": "../public/assets/img/CareerHub.png",
+            "job_title": "Product Manager",
+            "company_name": "CareerHub Co.",
+            "remote_or_onsite": "Remote",
+            "location": "Anywhere",
+            "fulltime_or_parttime": "Full-time",
+            "salary": "$120,000 - $140,000",
+            "job_description": "CareerHub Co. is seeking a product manager to manage our product portfolio and drive the development of innovative new products. The ideal candidate will have a strong background in product management and experience leading cross-functional teams to bring products to market. Key responsibilities include identifying new product opportunities, conducting market research, and defining product requirements. The product manager will work closely with design and engineering teams to develop product roadless, manage project timelines",
+            "job_responsibility": "The job responsibilities of a product manager at Tesla Co. may include: Defining and prioritizing product requirements based on market research and customer needs. Leading cross-functional teams to develop and launch new products, ensuring that project timelines and budgets are met. Conducting competitive analysis and staying up-to-date on industry trends to inform product development strategies. Collaborating with design and engineering teams to create product roadway's and ensure that products meet design and quality standards.",
+            "educational_requirements": "Bachelor's degree in Business Administration or related field",
+            "experiences": "5+ years of experience in product management",
+            "contact_information": {
+                "phone": "+1 (123) 456-7890",
+                "email": "jobs@product.com" }
+            }
+        ]
