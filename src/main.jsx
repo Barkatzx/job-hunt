@@ -6,7 +6,6 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Header from './component/Header/Header';
 import Statics from './component/Statics/Statics';
 import Blog from './component/Blog/Blog';
 import Jobapply from './component/Jobapply/Jobapply';
@@ -16,27 +15,27 @@ import Jobs from './component/Jobs/Jobs';
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Main></Main>,
+    element: <Main/>,
     children: [
       {
         path: '/',
-        element: <Home></Home>
+        element: <Home/>
       },
       {
         path: '/statics',
-        element: <Statics></Statics>
+        element: <Statics/>
       },
       {
         path: '/applied',
-        element: <Jobapply></Jobapply>
+        element: <Jobapply/>
       },
       {
         path: '/blog',
-        element: <Blog></Blog>
+        element: <Blog/>
       },
       {
         path: '/jobs',
-        element: <Jobs></Jobs>
+        element: <Jobs/>
       },
     ]
   }

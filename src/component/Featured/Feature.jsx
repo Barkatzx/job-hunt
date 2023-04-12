@@ -21,24 +21,24 @@ const Feature = () => {
 
   return (
     <div className='container mx-auto'>
-      <h2 className='text-5xl font-semibold text-center mt-8'>Featured Jobs</h2>
-      <h2 className='text-xl text-center mt-3'>
+      <h2 className='text-5xl font-semibold text-center m-8'>Featured Jobs</h2>
+      <h2 className='text-xl text-center m-3'>
         Explore thousands of job opportunities with all the information you need. It's your future
       </h2>
-      <div className='container mx-auto grid md:grid-cols-2 gap-4 mt-8 grid-rows-1'>
+      <div className='container mx-auto grid md:grid-cols-2 gap-4 m-8 grid-rows-1'>
         {feature.slice(0, showAll ? feature.length : 4).map(job => (
-          <div key={job.id} className='bg-white shadow-md rounded-md p-8'>
+          <div key={job.id} className='bg-white shadow-2xl rounded-md p-8'>
             <div className=''>
               <img src={job.company_logo} className='w-40' alt={job.company_name} />
-              <h3 className='text-3xl font-semibold mt-2'>{job.job_title}</h3>
+              <h3 className='text-3xl mt-2'>{job.job_title}</h3>
               <h3 className='text-lg font-semibold text-slate-500'>{job.company_name}</h3>
             </div>
             <div className='flex gap-4 mt-3'>
-              <div className='outline outline-purple-600 p-2 rounded-md'>
-                <h2 className='text-xl text-purple-600'>{job.remote_or_onsite}</h2>
+              <div className='outline outline-pink-500 p-2 rounded-md'>
+                <h2 className='text-xl text-pink-600'>{job.remote_or_onsite}</h2>
               </div>
-              <div className='outline outline-purple-600 p-2 rounded-md'>
-                <h2 className='text-xl text-purple-600'>{job.fulltime_or_parttime}</h2>
+              <div className='outline outline-pink-500 p-2 rounded-md'>
+                <h2 className='text-xl text-pink-600'>{job.fulltime_or_parttime}</h2>
               </div>
             </div>
             <div className='flex md:flex-row flex-col gap-3 mt-3'>
@@ -55,7 +55,7 @@ const Feature = () => {
             </div>
             <Link to={`/jobs?id=${job.id}`}>
   <button
-    className='mt-3 hover:bg-purple-300 text-white text-2xl font-bold p-3 rounded bg-gradient-to-r from-fuchsia-600 to-purple-600'
+    className='mt-3 hover:bg-pink-300 text-white text-xl font-semibold p-2 rounded-lg bg-pink-500'
     onClick={() => setSelectedJobId(job.id)}
   >
     View Details
@@ -68,7 +68,7 @@ const Feature = () => {
       {!showAll && (
         <div className='flex justify-center mt-8'>
           <button
-            className=' hover:bg-purple-300 text-white text-2xl font-bold p-3 rounded bg-gradient-to-r from-fuchsia-600 to-purple-600'
+            className=' hover:bg-purple-300 text-white text-xl font-bold p-2 rounded bg-pink-500'
             onClick={toggleShowAll}
           >
             See More

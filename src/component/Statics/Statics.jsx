@@ -1,5 +1,5 @@
 import React from 'react';
-import { PieChart, Pie, Legend, Tooltip } from 'recharts';
+import { PieChart, Pie, Cell, Legend, ResponsiveContainer } from 'recharts';
 
 const data = [
   { name: 'Assignment 1', value: 57 },
@@ -16,13 +16,25 @@ const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', '#8884d8', '#82ca9d'
 
 const Statics = () => {
   return (
-    <div className="container mx-auto flex justify-center">
-  <PieChart className="w-full max-w-md sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-6xl" width={400} height={400}>
-    <Pie dataKey="value" isAnimationActive={true} data={data} cx={200} cy={200} outerRadius={80} fill="#8884d8" label />
-    <Tooltip />
-  </PieChart>
-</div>
-
+    <ResponsiveContainer width="100%" height={400}>
+      <PieChart>
+        <Pie
+          dataKey="value"
+          data={data}
+          cx="50%"
+          cy="50%"
+          innerRadius={60}
+          outerRadius={80}
+          labelLine={false}
+          label={({ name, value }) => `${name}: ${value}%`}
+        >
+          {data.map((entry, index) => (
+            <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+          ))}
+        </Pie>
+        <Legend align="center" verticalAlign="bottom" />
+      </PieChart>
+    </ResponsiveContainer>
   );
 };
 
