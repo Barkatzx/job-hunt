@@ -4,7 +4,7 @@ const Category = () => {
   const [category, setCategory] = useState([]);
 
   useEffect(() => {
-    fetch('/category.json')
+    fetch('/jobs.json')
       .then(res => res.json())
       .then(data => setCategory(data))
       .catch(error => console.log(error));
@@ -17,9 +17,10 @@ const Category = () => {
   <div className='flex gap-5 md:flex-row flex-col justify-center m-5'>
     {category.map(cat => (
       <div key={cat.id} className='bg-pink-50 flex flex-col justify-center p-8 rounded-2xl'>
-        <img src={cat.logo} alt={cat.name} className='w-12 h-12 bg-pink-100 p-3 rounded-lg' />
-        <h3 className='text-2xl font-semibold mt-6'>{cat.name}</h3>
-        <p className='text-md font-medium text-gray-500'>{cat.jobs} Jobs Available</p>
+        <img src={cat.img} alt={cat.title}
+        className='w-12 h-12 bg-pink-100 p-3 rounded-lg' />
+        <h3 className='text-2xl font-semibold mt-6'>{cat.title}</h3>
+        <p className='text-md font-medium text-gray-500'>{cat.description} Jobs Available</p>
       </div>
     ))}
   </div>

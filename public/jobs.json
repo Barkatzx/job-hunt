@@ -7,19 +7,19 @@
       },
       {
         "id": 2,
-        "img": "../public/assets/Icons/Frame-2.png",
+        "img": "../public/assets/Icons/business 1.png",
         "title": "Creative Design",
         "description": 200 
       },
       {
         "id": 3,
-        "img": "../public/assets/Icons/business 1.png",
+        "img": "../public/assets/Icons/Frame-1.png",
         "title": "Marketing & Sales",
         "description": 224
       },
       {
         "id": 4,
-        "img": "../public/assets/Icons/Frame-4.png",
+        "img": "../public/assets/Icons/chip 1.png",
         "title": "Engineering Job",
         "description": 320
       }

@@ -12,10 +12,13 @@ import Jobapply from './component/Jobapply/Jobapply';
 import Main from './component/Layout/Main';
 import Home from './component/Home/Home';
 import Jobs from './component/Jobs/Jobs';
+import LoadingSpinner from './component/LodingSpinner/LodingSpinner'
+import ErrorPage from './component/ErrorPage/ErrorPage'
 const router = createBrowserRouter([
   {
     path: '/',
     element: <Main/>,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: '/',
