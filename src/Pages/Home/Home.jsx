@@ -3,6 +3,7 @@ import Banner from "/src/component/Banner";
 import { useLoaderData, useNavigation } from "react-router-dom";
 import SingleProduct from "/src/component/FeatureJob";
 import Category from "/src/Pages/Category/Catagory";
+import Footer from "../Footer/Footer";
 
 const Home = () => {
   const data = useLoaderData();
@@ -26,8 +27,6 @@ const Home = () => {
         Explore thousands of job opportunities with all the information you need. It's your future
       </h2>
 
-        {/* foods sections */}
-
         <div className="container mx-auto grid md:grid-cols-2 gap-4 m-8 grid-rows-1">
   {showAll
     ? products.map((product) => (
@@ -49,6 +48,7 @@ const Home = () => {
           )}
         </div>
       </div>
+      <Footer/>
     </div>
   );
 };

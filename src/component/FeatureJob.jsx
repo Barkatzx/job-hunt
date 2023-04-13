@@ -23,6 +23,7 @@ const FeatureJob = ({product}) => {
               <div className='outline outline-pink-500 p-2 rounded-md'>
                 <h2 className='text-xl text-pink-600'>{fulltime_or_parttime}</h2>
               </div>
+              </div>
             <div className='flex md:flex-row flex-col gap-3 mt-3'>
               <div className=''>
                 <h2 className='text-xl'>
@@ -35,9 +36,10 @@ const FeatureJob = ({product}) => {
                 </h2>
               </div>
             </div>
-          <Link to={`/product/${id}`} className="hover:bg-pink-400 text-white text-xl font-semibold p-2 rounded-lg bg-pink-500">Show Details</Link>
+            <div className="mt-4">
+          <Link to={`/product/${id}`} className=" hover:bg-pink-400 text-white text-xl font-semibold p-2 rounded-lg bg-pink-500">Show Details</Link>
         </div>
-      </div>
+        </div>
   );
 };
 

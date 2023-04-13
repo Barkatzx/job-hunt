@@ -1,42 +1,59 @@
 import React from "react";
 import { useLoaderData } from "react-router-dom";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const JobDetails = () => {
   const product = useLoaderData();
   console.log(product)
-  const { id, job_description, job_responsibility } = product;
+  const { id, job_description, job_responsibility, educational_requirements, experiences, job_title, salary, contact_information, location } = product;
 
   const handleOrder = () => {
     const storedData = JSON.parse(localStorage.getItem("orders"));
     if(storedData){
-        localStorage.setItem("orders",JSON.stringify([...storedData,product]))
-    }else{
-        localStorage.setItem("orders",JSON.stringify([product]))
+      const isAlreadyOrdered = storedData.find(item => item.id === product.id);
+      if(isAlreadyOrdered){
+        toast.error("You have already Applied this Job");
+        return;
+      }
+      localStorage.setItem("orders",JSON.stringify([...storedData,product]));
+      toast.success("Apply successfully!");
+    } else {
+      localStorage.setItem("orders",JSON.stringify([product]));
+      toast.success("Apply successfully!");
     }
-console.log(storedData)
-  }
+  }  
 
   return (
     <div>
-{/* <Banner bannerTitle={name}/> */}
+       <div className='flex justify-between bg-pink-50'>
+        <div>
+            <img src="/public/assets/img/Vector.png" className="" alt="Left Image" /></div>
+            <div className='text-center text-5xl font-semibold pt-10'>
+            Job Details</div>
+            <div>
+            <img src="/public/assets/img/Vector-1.png" className="" alt="Right Image" /></div>
+            </div>
+        <ToastContainer />
 
-      <div className="card card-side bg-base-100 shadow-xl">
-        <figure className="w-1/2 h-[400px]">
-          <img className="h-full w-full" src='' alt="Movie" />
-        </figure>
-        <div className="card-body">
-          <h2 className="card-title">
-           gggg
-            <div className="badge badge-secondary">ggg</div>
-          </h2>
-          <p className="text-md">Price:</p>
-          <p className="text-md">Rating: {job_responsibility}</p>
-          <p>{job_description}</p>
-          <div className="card-actions justify-end">
-            <button onClick={handleOrder} className="hover:bg-pink-400 text-white text-xl font-semibold p-2 rounded-lg bg-pink-500">Order This Food</button>
-          </div>
+        <div className="container mx-auto flex md:flex-row flex-col gap-8 mt-8 p-6 justify-between">
+        <div className="w-2/4">
+            <p className="mb-4"> <span className="font-bold text-lg">Job Description:</span> {job_description}</p>
+            <p className="mb-4"> <span className="font-bold text-lg">Job Responsibility:</span> {job_responsibility}</p>
+            <p className="mb-4"> <span className="font-bold text-lg">Educational Requirements:</span> {educational_requirements}</p>
+            <p> <span className="font-bold text-lg">Experiences:</span> {experiences}</p>
         </div>
+        <div className="bg-pink-50 rounded-xl p-10">
+          <h2 className="font-semibold mb-4">Job Details</h2> <hr className="mb-4" />
+          <p className="mb-2"> <span className="font-bold">Salary:</span> {salary}</p>
+          <p className="mb-2"> <span className="font-bold">Job Title:</span> {job_title}</p>
+          <div>
+        <button onClick={handleOrder} className="btn btn-primary">Apply Now</button>
+        </div>
+        </div>
+        
       </div>
+      
     </div>
   );
 };
